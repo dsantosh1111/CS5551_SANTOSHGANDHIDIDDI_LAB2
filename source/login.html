@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<span style="font-family: arial;  ">
+<head>
+    <style>
+body {
+    background-color: dodgerblue;
+}
+</style>
+    <title>login page</title>
+</head>
+<body>
+
+<h2 style="display:block;text-align:center;">Welcome to LOGIN page</h2>
+<div style="text-align: center;">
+</br></br></br></br></br>
+    <form name="login">
+        <fieldset>
+            <legend>Enter Login details:</legend>
+<div>
+    <form name="login">
+        Username:<input type="text" name="userid"/>
+    </br></br>
+        Password:<input type="password" name="pswrd"/>
+        </br></br>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
+    </form>
+    <script language="javascript">
+        function check(form)
+        {
+            if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+            {
+                window.open('homepage.html')
+            }
+            else
+            {
+                alert("Error Password or Username")
+            }
+        }
+        </script>
+    </br></br>
+    <p>Not a user!
+        <u><a href="register.html">Register</a></u>
+</div>
+        </fieldset>
+
+</div>
+</body>
+</span>
+</html>
